@@ -1,0 +1,146 @@
+<!doctype html>
+<link rel="stylesheet" href="style.css">
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Phoenix Synergize Official</title> 
+  <style>
+    header {
+      display: flex; /* Align items horizontally */
+      align-items: center; /* Center items vertically */
+      justify-content: center; /* Center items horizontally */
+      padding: 0px;
+      background-color: #f4f4f4; /* Light grey background */
+    }
+
+    img {
+      max-width: 100%; /* Responsive image */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="header.jpg"> <!-- Replace with your image URL --> 
+  </header> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Your Clan Website</title> 
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Full Page Background Image --> 
+  <div class="background-container"></div> <!-- Main Content Wrapper --> 
+  <div class="content-wrapper"> <!-- About Us Section --> 
+   <section class="about-us"> 
+    <h2 style="color: red;">Welcome To Phoenix Synergize</h2> 
+    <h3 class="about-text">We are a competitive, organized, and team-oriented Clash of Clans clan.</h3> 
+<h3 class="about-text">Our mission is to foster a supportive environment where every member can thrive, contribute, and achieve greatness together.</h3>
+   </section> <!-- Clan Info Dropdown --> 
+   <div class="dropdown-container"> <button class="dropdown-btn">Clan Info</button> 
+    <div class="dropdown-content"> 
+     <div id="clan-data"> <!-- Clan data will be inserted here --> 
+     </div> 
+    </div> 
+   </div> <!-- Clan Rules Dropdown --> 
+   <div class="dropdown-container"> <button class="dropdown-btn">Clan Rules</button> 
+    <div class="dropdown-content"> <button class="vision-btn">Basic Rules</button> 
+     <div class="vision-content"> 
+      <ul> 
+       <p>1. Treat all members with respect. No bullying, harassment, or abusive language.</p> 
+       <p>2. More than 3 days of inactivity will be result in a kick without any warning.</p> 
+      <p>3. Donate requested troops promptly. Maintain a healthy donation ratio.</p>
+      <p>4. Participate in clan games. Complete raid attack every week, Contribute gold to Prioritize tagged buildings.</p>
+      <p>5. Members should not hop between clans. Loyalty is valued and expected.</p>
+      <p>6. If you leave the clan without inform, will not be allowed to rejoin.</p>
+      <p>7. If you plan to be inactive for an extended period Inform Co-leaders.</p>
+      <p>8. If you get kicked out for inactive, you can rejoin the clan once you're active again.</p>
+      <p>9. Repeatedly or frequently violating the rules will result in a ban from clan.</p>
+      </ul> 
+     </div> <button class="vision-btn">War Rules</button> 
+     <div class="vision-content"> 
+      <ul> 
+       <p>1. War Sign-up is mandatory for every war to participate in clan wars.</p> 
+      <p>2. Do not sign-up for war if you are upgrading more than 1 heros.</p>
+      <p>3. If you missed 1 attack will be warned, missing both attack will be result in a kick.</p>
+      <p>4. Claim bases attack must be complete within 12 hrs. after 12 hrs claim will not valid.</p>
+      <p>5. If all bases are 3-starred, you can use your attack on any base to get loot.</p>
+      <p>6. All heros must be available. If you're participating in CWL.</p>
+      <p>7. Attack on mirror in CWL, missed attack in CWL will be result in a kick.</p>
+      <p>8. Do not attack on others mirror without inform co-leaders.</p>
+      <p>9. We expect at least 2 stars from everyone in CWL, whether you're attacking within your Town Hall level or hitting a higher one.</p>
+      </ul> 
+     </div> 
+    </div> 
+   </div> <!-- Join Discord Section --> 
+   <section class="join-discord"> 
+    <h2>Join Our Discord</h2> 
+    <p class="discord-text"> Join our Discord Server to stay connected with community and To be part of our family. </p> <button class="discord-btn" onclick="window.location.href='https://discord.com/invite/srjAGrFXKR'"> <i class="fab fa-discord"></i> Join Discord </button> 
+   </section> 
+  </div> <!-- Footer --> 
+  <footer> 
+   <p>© 2024 Phoenix Synergize. All rights reserved</p> 
+      <p>Designed by <a href="https://discord.com/users/610708992540278814" target="_blank" style="color: white;">Developer Jk</a></p> 
+
+  </footer> <!-- JavaScript for Dropdowns and API Fetch --> 
+  <script>
+        // Fetch clan data from Clash of Clans API
+        const fetchClanData = async () => {
+            const apiKey = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVjMWI4MWI1LWMwMDktNDU2OC1hZmIxLTAwMmM5NGEyMTJhNSIsImlhdCI6MTcyODI4NjQ0Mywic3ViIjoiZGV2ZWxvcGVyL2NjZjA4YWViLWJlYTYtZTRmYy05ZmZjLTllMTk3ZWY3ZWM1NCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjQ1Ljc5LjIxOC43OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.aV6YajuF1wdqB9VSO0oSUpaDx56QDKeXFpyf8a41PtP9-rWeYMY_trtooiG-rS8_afdKEMGoSlJKZtQnvnIZOg'; // Replace with your API key
+            const clanTag = '#URQRGU9J'; // Replace with your clan tag (e.g., '#123456')
+            const url = `https://cocproxy.royaleapi.dev/v1/clans/${encodeURIComponent(clanTag)}`;
+
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`
+                    }
+                });
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                displayClanData(data);
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+                document.getElementById('clan-data').innerHTML = `<p>Error fetching clan data: ${error.message}</p>`;
+            }
+        };
+
+        const displayClanData = (data) => {
+            const clanDataContainer = document.getElementById('clan-data');
+            clanDataContainer.innerHTML = `
+     <h3 style="color: white;">BOSS OF COC <a href="https://link.clashofclans.com/en/?action=OpenClanProfile&amp;tag=URQRGU9J" target="_blank" style="color: white;">(#URQRGU9J)</a></h3> 
+                <p>🌎 Location: ${data.location.name}</p>
+                <p>🚀 Level: ${data.clanLevel} 👥️ Members: ${data.members}/50</p>
+                <p>🏅 War Won: ${data.warWins} ❌️ War Lost: ${data.warLosses}</p>
+                <p>🪖 War Win Streak: ${data.warWinStreak}</p>
+                <p>🏆 War League: ${data.warLeague.name}</p>
+                <p>🏠 Required Townhall: ${data.requiredTownhallLevel}</p>
+                <p>⏳️ Clan Type: Competitive</p>
+                
+             `;
+        };
+
+        // Initialize fetching of clan data
+        fetchClanData();
+
+        // Toggle dropdown for Clan Info and Clan Rules
+        const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+        dropdownButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+
+        // Toggle visibility of War and Basic Rules under Clan Rules
+        const visionButtons = document.querySelectorAll('.vision-btn');
+        visionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+    </script> 
+ </body>
+</html>

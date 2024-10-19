@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Set full height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* Use your background image here */
+    background-size: cover auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.content-wrapper {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Add padding around content */
+}
+
+.about-us, .join-discord, .dropdown-container {
+    margin: 20px auto; /* Center align */
+    padding: -25px; /* Corrected padding */
+    max-width: 600px; /* Limit the width */
+      }
+
+/* New margin for vertical spacing */
+.about-us {
+    margin-bottom: 40px; /* Space below About Us */
+}
+
+.join-discord {
+    margin-bottom: 40px; /* Space below Join Discord */
+}
+
+h2 {
+    text-align: center;
+}
+
+.about-text, .discord-text {
+    text-align: center; /* Center text */
+    font-weight: bold;
+}
+
+.dropdown-container {
+    width: 100%; /* Full width for dropdowns */
+}
+
+.dropdown-btn {
+    width: 100%;
+    background-color: transparent; /* Make the button background transparent */
+    color: white;
+    padding: 15px;
+    border: 1px solid white; /* White border */
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px; /* Rounded corners */
+    font-weight: bold;
+    transition: transform 0.5s; /* Transition for scaling effect */
+}
+
+.dropdown-content, .vision-content {
+    display: none; /* Initially hidden */
+    background-color: rgba(255, 140, 0, 0.5); /* Semi-transparent background for dropdown */
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid white; /* White border */
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateY(-20px); /* Start from above */
+    transition: opacity 0.10s ease, transform 0.10s ease; /* Smooth opacity and transform transition */
+font-weight: bold;
+}
+
+.dropdown-content.show, .vision-content.show {
+    display: block; /* Make visible when toggled */
+    opacity: 1; /* Final opacity */
+      background-color: transparent;
+      text-align: center;
+    transform: translateY(0); /* Move to original position */
+}
+
+.vision-btn {
+    background-color: transparent; /* Make the button background transparent */
+    color: white;
+    padding: 10px;
+    border: 1px solid white; /* White border */
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.5s; /* Transition for scaling effect */
+}
+
+.vision-btn:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+.discord-btn {
+    background-color: #7289da; /* Discord color */
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Let the button width adjust to content */
+    margin-top: 10px;
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+    font-weight: bold;
+    transition: transform 0.10s; /* Transition for scaling effect */
+}
+
+.discord-btn:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+.discord-btn i {
+    margin-right: 8px; /* Spacing for Discord icon */
+}
+
+/* Footer Style */
+footer {
+    background-color: #121212;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
