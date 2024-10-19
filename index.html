@@ -85,7 +85,7 @@
   <script>
         // Fetch clan data from Clash of Clans API
         const fetchClanData = async () => {
-            const apiKey = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVjMWI4MWI1LWMwMDktNDU2OC1hZmIxLTAwMmM5NGEyMTJhNSIsImlhdCI6MTcyODI4NjQ0Mywic3ViIjoiZGV2ZWxvcGVyL2NjZjA4YWViLWJlYTYtZTRmYy05ZmZjLTllMTk3ZWY3ZWM1NCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjQ1Ljc5LjIxOC43OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.aV6YajuF1wdqB9VSO0oSUpaDx56QDKeXFpyf8a41PtP9-rWeYMY_trtooiG-rS8_afdKEMGoSlJKZtQnvnIZOg'; // Replace with your API key
+            const apiKey = process.env.API_KEY; // Replace with your API key
             const clanTag = '#URQRGU9J'; // Replace with your clan tag (e.g., '#123456')
             const url = `https://cocproxy.royaleapi.dev/v1/clans/${encodeURIComponent(clanTag)}`;
 
